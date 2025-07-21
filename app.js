@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const issuesRoute = require("./routes/issues.route");
 const PORT = process.env.PORT;
 const { connectNats } = require("./utils/nats-wrapper");
+const swaggerDocs = require("./swagger");
 app.use(express.json());
 
 (async () => {
@@ -20,6 +21,9 @@ app.use(express.json());
 
     // Use issues route
     app.use("/api/issues", issuesRoute);
+
+    // Initialize Swagger documentation
+    swaggerDocs(app);
 
     // app.listen
     app.listen(PORT, () => {

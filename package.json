@@ -15,7 +15,9 @@
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
     "mongoose": "^8.16.4",
-    "nats": "^2.29.3"
+    "nats": "^2.29.3",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
   },
   "type": "commonjs"
 }
