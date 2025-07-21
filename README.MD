@@ -18,8 +18,8 @@ A simple Express.js + MongoDB REST API to manage issues (create, update, delete,
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone
-cd your-repo-name
+git clone https://github.com/satvik423/oriv-1.git
+cd oriv-1
 ```
 
 ---
