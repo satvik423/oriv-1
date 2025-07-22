@@ -1,0 +1,14 @@
+services:
+  app:
+    build: .
+    ports:
+      - "${PORT:-3000}:3000"
+    env_file:
+      - .env
+    # depends_on:
+    #   - nats
+
+  # nats:
+  #   image: nats:latest
+  #   ports:
+  #     - "4222:4222"
