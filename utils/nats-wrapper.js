@@ -5,7 +5,7 @@ let natsConnection;
 
 async function connectNats() {
   natsConnection = await connect({
-    servers: "nats://host.docker.internal:4222",
+    servers: process.env.NATS_URL || "localhost:4222",
   });
   console.log("✅ Connected to NATS");
 

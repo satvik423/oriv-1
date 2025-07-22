@@ -4,7 +4,7 @@ const { getNatsConnection } = require("../utils/nats-wrapper");
 
 const getIssues = async (req, res) => {
   try {
-    const issues = await Issue.find();
+    const issues = await Issue.find()
     const nc = getNatsConnection();
     nc.publish("issues.retrieved", JSON.stringify(issues));
     // console.log("Retrieved issues:", issues);

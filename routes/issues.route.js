@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-
+const roles = require("../middlewares/roles");
 const {
   getIssues,
   createIssue,
@@ -67,7 +67,7 @@ const {
  *               items:
  *                 $ref: '#/components/schemas/Issue'
  */
-router.get("/", getIssues);
+router.get("/", roles("admin", "tester", "issuer"), getIssues);
 
 /**
  * @swagger
@@ -87,7 +87,7 @@ router.get("/", getIssues);
  *       400:
  *         description: Bad request
  */
-router.post("/", createIssue);
+router.post("/", roles("issuer"), createIssue);
 
 /**
  * @swagger
@@ -114,7 +114,7 @@ router.post("/", createIssue);
  *       404:
  *         description: Issue not found
  */
-router.put("/:id", updateIssue);
+router.put("/:id", roles("tester"), updateIssue);
 
 /**
  * @swagger
@@ -135,6 +135,6 @@ router.put("/:id", updateIssue);
  *       404:
  *         description: Issue not found
  */
-router.delete("/:id", deleteIssue);
+router.delete("/:id", roles("admin"), deleteIssue);
 
 module.exports = router;
