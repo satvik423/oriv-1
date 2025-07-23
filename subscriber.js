@@ -1,7 +1,9 @@
 const { connect } = require("nats");
 
 (async () => {
-  const nc = await connect({ servers: "localhost:4222" });
+  const nc = await connect({
+    servers: process.env.NATS_URL || "localhost:4222",
+  });
 
   // 🟢 Helper function to handle subscription in its own loop
   const subscribe = async (subject, handler) => {

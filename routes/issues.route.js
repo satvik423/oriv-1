@@ -11,6 +11,11 @@ const {
 /**
  * @swagger
  * components:
+ *   securitySchemes:
+ *     BearerAuth:
+ *       type: http
+ *       scheme: bearer
+ *       bearerFormat: JWT
  *   schemas:
  *     Issue:
  *       type: object
@@ -31,17 +36,23 @@ const {
  *           description: Description of the issue
  *         status:
  *           type: string
- *           enum: [open, in-progress, closed]
+ *           enum:
+ *             - open
+ *             - in-progress
+ *             - closed
  *           description: Current status of the issue
  *         priority:
  *           type: string
- *           enum: [low, medium, high]
+ *           enum:
+ *             - low
+ *             - medium
+ *             - high
  *           description: Priority level
  *       example:
- *         title: "Login button not working"
- *         description: "The login button on the homepage does nothing when clicked."
- *         status: "open"
- *         priority: "high"
+ *         title: Login button not working
+ *         description: The login button on the homepage does nothing when clicked.
+ *         status: open
+ *         priority: high
  */
 
 /**
@@ -57,6 +68,8 @@ const {
  *   get:
  *     summary: Get all issues
  *     tags: [Issues]
+ *     security:
+ *       - BearerAuth: []
  *     responses:
  *       200:
  *         description: List of issues
@@ -75,6 +88,8 @@ router.get("/", roles("admin", "tester", "issuer"), getIssues);
  *   post:
  *     summary: Create a new issue
  *     tags: [Issues]
+ *     security:
+ *       - BearerAuth: []
  *     requestBody:
  *       required: true
  *       content:
@@ -95,6 +110,8 @@ router.post("/", roles("issuer"), createIssue);
  *   put:
  *     summary: Update an existing issue
  *     tags: [Issues]
+ *     security:
+ *       - BearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id
@@ -122,6 +139,8 @@ router.put("/:id", roles("tester"), updateIssue);
  *   delete:
  *     summary: Delete an issue
  *     tags: [Issues]
+ *     security:
+ *       - BearerAuth: []
  *     parameters:
  *       - in: path
  *         name: id

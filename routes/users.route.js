@@ -1,44 +1,115 @@
 const express = require("express");
 const router = express.Router();
 const User = require("../models/users");
+const { getUsers, createUser, deleteUser } = require("../controllers/user");
 
-router.get("/", async (req, res) => {
-  try {
-    const users = await User.find();
-    res.status(200).json(users);
-  } catch (error) {
-    res.status(500).json({ error: "Internal server error" });
-  }
-});
+/**
+ * @swagger
+ * tags:
+ *   name: Users
+ *   description: User management endpoints
+ */
 
-router.post("/", async (req, res) => {
-  const { username, password, role } = req.body;
-  if (!username || !password) {
-    return res
-      .status(400)
-      .json({ error: "Username and password are required" });
-  }
+/**
+ * @swagger
+ * components:
+ *   schemas:
+ *     User:
+ *       type: object
+ *       properties:
+ *         _id:
+ *           type: string
+ *         username:
+ *           type: string
+ *         password:
+ *           type: string
+ *         role:
+ *           type: string
+ *           example: admin
+ *     UserInput:
+ *       type: object
+ *       required:
+ *         - username
+ *         - password
+ *       properties:
+ *         username:
+ *           type: string
+ *           example: johndoe
+ *         password:
+ *           type: string
+ *           example: mysecret123
+ *         role:
+ *           type: string
+ *           example: issuer
+ */
 
-  try {
-    const newUser = new User({ username, password, role });
-    await newUser.save();
-    res.status(201).json(newUser);
-  } catch (error) {
-    res.status(500).json({ error: "Internal server error" });
-  }
-});
+/**
+ * @swagger
+ * /api/users:
+ *   get:
+ *     summary: Get all users
+ *     tags: [Users]
+ *     responses:
+ *       200:
+ *         description: List of users
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 $ref: '#/components/schemas/User'
+ *       500:
+ *         description: Internal server error
+ */
+router.get("/", getUsers);
 
-router.delete("/:id", async (req, res) => {
-  const { id } = req.params;
-  try {
-    const user = await User.findByIdAndDelete(id);
-    if (!user) {
-      return res.status(404).json({ error: "User not found" });
-    }
-    res.status(200).json({ message: "User deleted successfully" });
-  } catch (error) {
-    res.status(500).json({ error: "Internal server error" });
-  }
-});
+/**
+ * @swagger
+ * /api/users:
+ *   post:
+ *     summary: Create a new user
+ *     tags: [Users]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/UserInput'
+ *     responses:
+ *       201:
+ *         description: User created
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/User'
+ *       400:
+ *         description: Missing username or password
+ *       500:
+ *         description: Internal server error
+ */
+router.post("/", createUser);
+
+/**
+ * @swagger
+ * /api/users/{id}:
+ *   delete:
+ *     summary: Delete user by ID
+ *     tags: [Users]
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         schema:
+ *           type: string
+ *         required: true
+ *         description: User ID
+ *     responses:
+ *       200:
+ *         description: User deleted successfully
+ *       404:
+ *         description: User not found
+ *       500:
+ *         description: Internal server error
+ */
+router.delete("/:id", deleteUser);
 
 module.exports = router;

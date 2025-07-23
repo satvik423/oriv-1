@@ -41,13 +41,6 @@ app.use(express.json());
       }
     });
 
-    // app.get("/api/debug", auth, roles("admin"), (req, res) => {
-    //   res.json({
-    //     message: "✅ You are admin",
-    //     user: req.user,
-    //   });
-    // });
-
     app.use("/api/auth", authRoutes);
     // Use issues route
     app.use("/api/issues", auth, issuesRoute);

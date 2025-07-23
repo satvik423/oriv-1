@@ -6,13 +6,21 @@ const options = {
   definition: {
     openapi: "3.0.0",
     info: {
-      title: "Issue Tracker API",
+      title: "Your API",
       version: "1.0.0",
-      description: "API documentation for the Issue Tracker App",
     },
-    servers: [
+    components: {
+      securitySchemes: {
+        bearerAuth: {
+          type: "http",
+          scheme: "bearer",
+          bearerFormat: "JWT", // optional, just for display
+        },
+      },
+    },
+    security: [
       {
-        url: "http://localhost:5000", // change based on your environment
+        bearerAuth: [],
       },
     ],
   },
