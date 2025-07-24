@@ -6,9 +6,19 @@ const getIssues = async (req, res) => {
   try {
     const issues = await Issue.find();
     const nc = getNatsConnection();
-    nc.publish("issues.retrieved", JSON.stringify(issues));
+    const finalIssue = issues.map((issue) => {
+      const issueObj = issue.toObject();
+      if (issueObj.image) {
+        issueObj.image = `http://localhost:5000/${issueObj.image.replace(
+          "\\",
+          "/"
+        )}`;
+      }
+      return issueObj;
+    });
+    nc.publish("issues.retrieved", JSON.stringify(finalIssue));
     // console.log("Retrieved issues:", issues);
-    res.status(200).json(issues);
+    res.status(200).json(finalIssue);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -16,12 +26,23 @@ const getIssues = async (req, res) => {
 
 const createIssue = async (req, res) => {
   try {
-    const issue = new Issue(req.body);
+    const issueData = {
+      title: req.body.title,
+      description: req.body.description,
+      status: req.body.status || "open",
+      priority: req.body.priority || "medium",
+      image: req.file?.path,
+    };
+
+    if (req.file) {
+      issueData.image = req.file.path.replace(/\\/g, "/");
+    }
+
+    const issue = new Issue(issueData);
     const saved = await issue.save();
     const nc = getNatsConnection();
     nc.publish("issue.created", JSON.stringify(saved));
-    // console.log("Issue created:", issue);
-    res.status(201).json(issue);
+    res.status(201).json(saved);
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -49,7 +70,7 @@ const deleteIssue = async (req, res) => {
     }
     const nc = getNatsConnection();
     nc.publish("issue.deleted", JSON.stringify(issue));
-    console.log("Issue deleted:", issue);
+    // console.log("Issue deleted:", issue);
     res.status(204).send();
   } catch (error) {
     res.status(500).json({ error: error.message });

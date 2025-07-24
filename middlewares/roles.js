@@ -1,9 +1,9 @@
 const roles = (...allowedRoles) => {
   return (req, res, next) => {
-    console.log("JWT payload:", req.user); // debug
+    // console.log("JWT payload:", req.user); // debug
     const userRole = req.user?.role;
-    console.log("User role:", userRole);
-    console.log("Allowed roles:", allowedRoles);
+    // console.log("User role:", userRole);
+    // console.log("Allowed roles:", allowedRoles);
 
     if (!userRole || !allowedRoles.includes(userRole)) {
       console.log("Access Denied");

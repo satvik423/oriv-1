@@ -9,17 +9,16 @@ const { connectNats } = require("./utils/nats-wrapper");
 const swaggerDocs = require("./swagger");
 const auth = require("./middlewares/auth");
 const User = require("./models/users");
+const connectDB = require("./config/db");
 const roles = require("./middlewares/roles");
 const authRoutes = require("./routes/auth.route");
 app.use(express.json());
+app.use("/uploads", express.static("uploads"));
 
 (async () => {
   try {
     // Connect to MongoDB
-    mongoose
-      .connect(process.env.MONGODB_URI)
-      .then(() => console.log("MongoDB connected"))
-      .catch((err) => console.error("MongoDB connection error:", err));
+    await connectDB();
 
     // Connect to NATS
     await connectNats();

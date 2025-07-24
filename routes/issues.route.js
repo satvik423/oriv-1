@@ -7,6 +7,7 @@ const {
   updateIssue,
   deleteIssue,
 } = require("../controllers/issues");
+const upload = require("../config/store");
 
 /**
  * @swagger
@@ -81,6 +82,7 @@ const {
  *                 $ref: '#/components/schemas/Issue'
  */
 router.get("/", roles("admin", "tester", "issuer"), getIssues);
+// router.get("/", getIssues);
 
 /**
  * @swagger
@@ -102,7 +104,8 @@ router.get("/", roles("admin", "tester", "issuer"), getIssues);
  *       400:
  *         description: Bad request
  */
-router.post("/", roles("issuer"), createIssue);
+router.post("/", roles("issuer"), upload.single("image"), createIssue);
+// router.post("/", upload.single("image"), createIssue);
 
 /**
  * @swagger

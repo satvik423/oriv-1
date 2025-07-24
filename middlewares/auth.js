@@ -3,7 +3,7 @@ const secret = process.env.SECRET || "secret";
 
 module.exports = (req, res, next) => {
   const authHeader = req.headers.authorization;
-  console.log("🧾 Authorization Header:", authHeader);
+  // console.log("🧾 Authorization Header:", authHeader);
 
   const token = authHeader?.split(" ")[1];
   if (!token) {
