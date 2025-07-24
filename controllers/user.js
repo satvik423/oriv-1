@@ -1,4 +1,5 @@
 const User = require("../models/users");
+const userValidationSchema = require("../validation/user.validator");
 
 const getUsers = async (req, res) => {
   try {
@@ -11,14 +12,24 @@ const getUsers = async (req, res) => {
 
 const createUser = async (req, res) => {
   const { username, password, role } = req.body;
+
   if (!username || !password) {
     return res
       .status(400)
       .json({ error: "Username and password are required" });
   }
 
+  const { error, value } = userValidationSchema.validate({
+    username,
+    password,
+    role,
+  });
+  if (error) {
+    return res.status(400).json({ error: error.details[0].message });
+  }
+
   try {
-    const newUser = new User({ username, password, role });
+    const newUser = new User(value);
     await newUser.save();
     res.status(201).json(newUser);
   } catch (error) {

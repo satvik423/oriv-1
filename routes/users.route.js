@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const User = require("../models/users");
 const { getUsers, createUser, deleteUser } = require("../controllers/user");
+const roles = require("../middlewares/roles");
 
 /**
  * @swagger
@@ -61,7 +62,7 @@ const { getUsers, createUser, deleteUser } = require("../controllers/user");
  *       500:
  *         description: Internal server error
  */
-router.get("/", getUsers);
+router.get("/", roles("admin"), getUsers);
 
 /**
  * @swagger
@@ -110,6 +111,6 @@ router.post("/", createUser);
  *       500:
  *         description: Internal server error
  */
-router.delete("/:id", deleteUser);
+router.delete("/:id", roles("admin"), deleteUser);
 
 module.exports = router;

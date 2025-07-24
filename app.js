@@ -43,7 +43,7 @@ app.use("/uploads", express.static("uploads"));
     app.use("/api/auth", authRoutes);
     // Use issues route
     app.use("/api/issues", auth, issuesRoute);
-    app.use("/api/users", auth, roles("admin"), usersRoute);
+    app.use("/api/users", auth, usersRoute);
     // Initialize Swagger documentation
     swaggerDocs(app);
 

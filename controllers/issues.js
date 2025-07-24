@@ -1,6 +1,7 @@
 const Issue = require("../models/issues");
 // Publish event to NATS
 const { getNatsConnection } = require("../utils/nats-wrapper");
+const issueValidationSchema = require("../validation/issue.validator");
 
 const getIssues = async (req, res) => {
   try {
@@ -37,8 +38,11 @@ const createIssue = async (req, res) => {
     if (req.file) {
       issueData.image = req.file.path.replace(/\\/g, "/");
     }
-
-    const issue = new Issue(issueData);
+    const { error, value } = issueValidationSchema.validate(issueData);
+    if (error) {
+      return res.status(400).json({ error: error.details[0].message });
+    }
+    const issue = new Issue(value);
     const saved = await issue.save();
     const nc = getNatsConnection();
     nc.publish("issue.created", JSON.stringify(saved));
