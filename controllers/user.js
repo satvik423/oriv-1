@@ -25,7 +25,7 @@ const createUser = async (req, res) => {
     role,
   });
   if (error) {
-    return res.status(400).json({ error: error.details[0].message });
+    return res.status(400).json({ error: error });
   }
 
   try {

@@ -25,7 +25,7 @@ const login = async (req, res) => {
     expiresIn: "1w",
   });
   console.log(token);
-  res.json({ token });
+  res.json({ token: token, role: user.role });
 };
 
 module.exports = { signup, login };
