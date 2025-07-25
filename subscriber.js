@@ -1,4 +1,5 @@
 const { connect } = require("nats");
+const logger = require("./logger");
 
 (async () => {
   const nc = await connect({
@@ -8,7 +9,8 @@ const { connect } = require("nats");
   // 🟢 Helper function to handle subscription in its own loop
   const subscribe = async (subject, handler) => {
     const sub = nc.subscribe(subject);
-    console.log(`✅ Subscribed to '${subject}'`);
+    logger.info(`✅ Subscribed to '${subject}'`);
+    // console.log(`✅ Subscribed to '${subject}'`);
     for await (const msg of sub) {
       const data = JSON.parse(msg.data);
       handler(data);
@@ -17,18 +19,22 @@ const { connect } = require("nats");
 
   // Run subscriptions in parallel
   subscribe("issue.created", (data) => {
-    console.log("Issue Created:", data);
+    logger.info("Issue Created:", data);
+    // console.log("Issue Created:", data);
   });
 
   subscribe("issues.retrieved", (data) => {
-    console.log("Issues Retrieved:", data);
+    logger.info("Issues Retrieved:", data);
+    // console.log("Issues Retrieved:", data);
   });
 
   subscribe("issue.updated", (data) => {
-    console.log("Issue Updated:", data);
+    logger.info("Issue Updated:", data);
+    // console.log("Issue Updated:", data);
   });
 
   subscribe("issue.deleted", (data) => {
-    console.log("Issue Deleted:", data);
+    logger.info("Issue Deleted:", data);
+    // console.log("Issue Deleted:", data);
   });
 })();

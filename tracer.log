@@ -1,0 +1,1249 @@
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-dns',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: '605aad44d04a00b08c6fe878f167d55a',
+  parentSpanContext: undefined,
+  traceState: undefined,
+  name: 'dns.lookup',
+  id: '2a028a26e8636494',
+  kind: 2,
+  timestamp: 1753438957161000,
+  duration: 89774.4,
+  attributes: { 'peer.ipv4': '159.41.251.246' },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-net',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: '2004f0b673591d346a960e73711c0ed1',
+  parentSpanContext: {
+    traceId: '2004f0b673591d346a960e73711c0ed1',
+    spanId: 'b270b1c8c9166d6f',
+    traceFlags: 1,
+    traceState: undefined
+  },
+  traceState: undefined,
+  name: 'tcp.connect',
+  id: 'b1174955884b7090',
+  kind: 0,
+  timestamp: 1753438957161000,
+  duration: 138994.5,
+  attributes: {
+    'net.transport': 'ip_tcp',
+    'net.peer.name': 'ac-wdgiqte-shard-00-01.sjry5f5.mongodb.net',
+    'net.peer.port': 27017,
+    'net.peer.ip': '159.41.251.246',
+    'net.host.ip': '192.168.1.25',
+    'net.host.port': 57628
+  },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-dns',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: '64aeb0c18ffe2ae881be1ad59eb28521',
+  parentSpanContext: undefined,
+  traceState: undefined,
+  name: 'dns.lookup',
+  id: '9b37cdb69f0b6c94',
+  kind: 2,
+  timestamp: 1753438957162000,
+  duration: 141690.1,
+  attributes: { 'peer.ipv4': '159.41.196.0' },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-net',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: '080196f15d0cd91b4686f827015e5a35',
+  parentSpanContext: {
+    traceId: '080196f15d0cd91b4686f827015e5a35',
+    spanId: 'a84491aad8b9e903',
+    traceFlags: 1,
+    traceState: undefined
+  },
+  traceState: undefined,
+  name: 'tcp.connect',
+  id: '0e4a1e934e172282',
+  kind: 0,
+  timestamp: 1753438957162000,
+  duration: 180141.5,
+  attributes: {
+    'net.transport': 'ip_tcp',
+    'net.peer.name': 'ac-wdgiqte-shard-00-02.sjry5f5.mongodb.net',
+    'net.peer.port': 27017,
+    'net.peer.ip': '159.41.196.0',
+    'net.host.ip': '192.168.1.25',
+    'net.host.port': 57629
+  },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-net',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: '2004f0b673591d346a960e73711c0ed1',
+  parentSpanContext: undefined,
+  traceState: undefined,
+  name: 'tls.connect',
+  id: 'b270b1c8c9166d6f',
+  kind: 0,
+  timestamp: 1753438957160000,
+  duration: 223836.9,
+  attributes: {
+    'tls.protocol': 'TLSv1.3',
+    'tls.authorized': 'true',
+    'tls.cipher.name': 'TLS_AES_128_GCM_SHA256',
+    'tls.cipher.version': 'TLSv1.3',
+    'tls.certificate.fingerprint': '56:4F:59:61:46:69:9F:CC:BD:1D:4D:35:1E:C2:B3:08:A9:17:3C:AA',
+    'tls.certificate.serialNumber': '06C00C79FE8CAD518929A26040B23D5E1C3A',
+    'tls.certificate.validFrom': 'Jul 21 05:31:33 2025 GMT',
+    'tls.certificate.validTo': 'Oct 19 05:31:32 2025 GMT',
+    'tls.alpnProtocol': ''
+  },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-net',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: '080196f15d0cd91b4686f827015e5a35',
+  parentSpanContext: undefined,
+  traceState: undefined,
+  name: 'tls.connect',
+  id: 'a84491aad8b9e903',
+  kind: 0,
+  timestamp: 1753438957162000,
+  duration: 254620.7,
+  attributes: {
+    'tls.protocol': 'TLSv1.3',
+    'tls.authorized': 'true',
+    'tls.cipher.name': 'TLS_AES_128_GCM_SHA256',
+    'tls.cipher.version': 'TLSv1.3',
+    'tls.certificate.fingerprint': '56:4F:59:61:46:69:9F:CC:BD:1D:4D:35:1E:C2:B3:08:A9:17:3C:AA',
+    'tls.certificate.serialNumber': '06C00C79FE8CAD518929A26040B23D5E1C3A',
+    'tls.certificate.validFrom': 'Jul 21 05:31:33 2025 GMT',
+    'tls.certificate.validTo': 'Oct 19 05:31:32 2025 GMT',
+    'tls.alpnProtocol': ''
+  },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-dns',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: 'd505eca9009a9760dc256c13dc159201',
+  parentSpanContext: undefined,
+  traceState: undefined,
+  name: 'dns.lookup',
+  id: 'e403219165ba32d1',
+  kind: 2,
+  timestamp: 1753438957461000,
+  duration: 932.2,
+  attributes: { 'peer.ipv4': '159.41.196.0' },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-dns',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: '96660369556c66869aee2cb3ccb6ce06',
+  parentSpanContext: undefined,
+  traceState: undefined,
+  name: 'dns.lookup',
+  id: 'a2e0870c806cd4eb',
+  kind: 2,
+  timestamp: 1753438957159000,
+  duration: 303601.8,
+  attributes: { 'peer.ipv4': '159.41.251.235' },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-net',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: '3e626653872d998ea559a6386448f08c',
+  parentSpanContext: {
+    traceId: '3e626653872d998ea559a6386448f08c',
+    spanId: '69e2d2ed7e369912',
+    traceFlags: 1,
+    traceState: undefined
+  },
+  traceState: undefined,
+  name: 'tcp.connect',
+  id: 'c58cfa09e9574291',
+  kind: 0,
+  timestamp: 1753438957460000,
+  duration: 39814.7,
+  attributes: {
+    'net.transport': 'ip_tcp',
+    'net.peer.name': 'ac-wdgiqte-shard-00-02.sjry5f5.mongodb.net',
+    'net.peer.port': 27017,
+    'net.peer.ip': '159.41.196.0',
+    'net.host.ip': '192.168.1.25',
+    'net.host.port': 57630
+  },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-net',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: '985b98457cd02ad3ea80601c2cabc575',
+  parentSpanContext: {
+    traceId: '985b98457cd02ad3ea80601c2cabc575',
+    spanId: '37f52bac8d16a70e',
+    traceFlags: 1,
+    traceState: undefined
+  },
+  traceState: undefined,
+  name: 'tcp.connect',
+  id: '73b9876b576bfa10',
+  kind: 0,
+  timestamp: 1753438957156000,
+  duration: 344669.8,
+  attributes: {
+    'net.transport': 'ip_tcp',
+    'net.peer.name': 'ac-wdgiqte-shard-00-00.sjry5f5.mongodb.net',
+    'net.peer.port': 27017,
+    'net.peer.ip': '159.41.251.235',
+    'net.host.ip': '192.168.1.25',
+    'net.host.port': 57631
+  },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-net',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: '3e626653872d998ea559a6386448f08c',
+  parentSpanContext: undefined,
+  traceState: undefined,
+  name: 'tls.connect',
+  id: '69e2d2ed7e369912',
+  kind: 0,
+  timestamp: 1753438957460000,
+  duration: 115544.3,
+  attributes: {
+    'tls.protocol': 'TLSv1.3',
+    'tls.authorized': 'true',
+    'tls.cipher.name': 'TLS_AES_128_GCM_SHA256',
+    'tls.cipher.version': 'TLSv1.3',
+    'tls.certificate.fingerprint': '56:4F:59:61:46:69:9F:CC:BD:1D:4D:35:1E:C2:B3:08:A9:17:3C:AA',
+    'tls.certificate.serialNumber': '06C00C79FE8CAD518929A26040B23D5E1C3A',
+    'tls.certificate.validFrom': 'Jul 21 05:31:33 2025 GMT',
+    'tls.certificate.validTo': 'Oct 19 05:31:32 2025 GMT',
+    'tls.alpnProtocol': ''
+  },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-net',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: '985b98457cd02ad3ea80601c2cabc575',
+  parentSpanContext: undefined,
+  traceState: undefined,
+  name: 'tls.connect',
+  id: '37f52bac8d16a70e',
+  kind: 0,
+  timestamp: 1753438957156000,
+  duration: 426624.1,
+  attributes: {
+    'tls.protocol': 'TLSv1.3',
+    'tls.authorized': 'true',
+    'tls.cipher.name': 'TLS_AES_128_GCM_SHA256',
+    'tls.cipher.version': 'TLSv1.3',
+    'tls.certificate.fingerprint': '56:4F:59:61:46:69:9F:CC:BD:1D:4D:35:1E:C2:B3:08:A9:17:3C:AA',
+    'tls.certificate.serialNumber': '06C00C79FE8CAD518929A26040B23D5E1C3A',
+    'tls.certificate.validFrom': 'Jul 21 05:31:33 2025 GMT',
+    'tls.certificate.validTo': 'Oct 19 05:31:32 2025 GMT',
+    'tls.alpnProtocol': ''
+  },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-dns',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: 'cf7c0b22c1a1af17f0a1c9fcd686adcf',
+  parentSpanContext: undefined,
+  traceState: undefined,
+  name: 'dns.lookup',
+  id: 'db6be0b0857d94dd',
+  kind: 2,
+  timestamp: 1753438957795000,
+  duration: 1133.6,
+  attributes: { 'peer.ipv4': '159.41.196.0' },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-dns',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: '74cd080848b14c33b57db912868048f6',
+  parentSpanContext: undefined,
+  traceState: undefined,
+  name: 'dns.lookup',
+  id: '5521939a25c00103',
+  kind: 2,
+  timestamp: 1753438957821000,
+  duration: 1115.5,
+  attributes: { 'peer.ipv6': '::1', 'peer[1].ipv4': '127.0.0.1' },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-net',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: '60abac3cf45b3340697d85fbf15d8ad8',
+  parentSpanContext: undefined,
+  traceState: undefined,
+  name: 'tcp.connect',
+  id: '4a719ed834992b50',
+  kind: 0,
+  timestamp: 1753438957821000,
+  duration: 2564.8,
+  attributes: {
+    'net.transport': 'ip_tcp',
+    'net.peer.name': 'localhost',
+    'net.peer.port': 4222,
+    'net.peer.ip': '::1',
+    'net.host.ip': '::1',
+    'net.host.port': 57633
+  },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-net',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: '577f1a808219eca1d2e6a60fa669a5ed',
+  parentSpanContext: {
+    traceId: '577f1a808219eca1d2e6a60fa669a5ed',
+    spanId: '92f425fd85c50f4e',
+    traceFlags: 1,
+    traceState: undefined
+  },
+  traceState: undefined,
+  name: 'tcp.connect',
+  id: 'b39a538e30ddf64a',
+  kind: 0,
+  timestamp: 1753438957795000,
+  duration: 44922.9,
+  attributes: {
+    'net.transport': 'ip_tcp',
+    'net.peer.name': 'ac-wdgiqte-shard-00-02.sjry5f5.mongodb.net',
+    'net.peer.port': 27017,
+    'net.peer.ip': '159.41.196.0',
+    'net.host.ip': '192.168.1.25',
+    'net.host.port': 57632
+  },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-net',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: '577f1a808219eca1d2e6a60fa669a5ed',
+  parentSpanContext: undefined,
+  traceState: undefined,
+  name: 'tls.connect',
+  id: '92f425fd85c50f4e',
+  kind: 0,
+  timestamp: 1753438957795000,
+  duration: 118563.7,
+  attributes: {
+    'tls.protocol': 'TLSv1.3',
+    'tls.authorized': 'true',
+    'tls.cipher.name': 'TLS_AES_128_GCM_SHA256',
+    'tls.cipher.version': 'TLSv1.3',
+    'tls.certificate.fingerprint': '56:4F:59:61:46:69:9F:CC:BD:1D:4D:35:1E:C2:B3:08:A9:17:3C:AA',
+    'tls.certificate.serialNumber': '06C00C79FE8CAD518929A26040B23D5E1C3A',
+    'tls.certificate.validFrom': 'Jul 21 05:31:33 2025 GMT',
+    'tls.certificate.validTo': 'Oct 19 05:31:32 2025 GMT',
+    'tls.alpnProtocol': ''
+  },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-dns',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: '658bd1bc6b446f2ee5b5b5d6082c310d',
+  parentSpanContext: undefined,
+  traceState: undefined,
+  name: 'dns.lookup',
+  id: '222936e999bcf8cb',
+  kind: 2,
+  timestamp: 1753438967965000,
+  duration: 6841.4,
+  attributes: { 'peer.ipv4': '159.41.251.246' },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-dns',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: 'e6bcd9ce8ec7eb715b12d266cd5e7031',
+  parentSpanContext: undefined,
+  traceState: undefined,
+  name: 'dns.lookup',
+  id: 'd10ff164d09dbe1b',
+  kind: 2,
+  timestamp: 1753438967973000,
+  duration: 6011.1,
+  attributes: { 'peer.ipv4': '159.41.196.0' },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-net',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: 'f05f4440d3ec584fcbdafbd0fd7d3fca',
+  parentSpanContext: {
+    traceId: 'f05f4440d3ec584fcbdafbd0fd7d3fca',
+    spanId: 'd4570fcf0473b2ad',
+    traceFlags: 1,
+    traceState: undefined
+  },
+  traceState: undefined,
+  name: 'tcp.connect',
+  id: '88adc37cde5ced57',
+  kind: 0,
+  timestamp: 1753438967965000,
+  duration: 45827.7,
+  attributes: {
+    'net.transport': 'ip_tcp',
+    'net.peer.name': 'ac-wdgiqte-shard-00-01.sjry5f5.mongodb.net',
+    'net.peer.port': 27017,
+    'net.peer.ip': '159.41.251.246',
+    'net.host.ip': '192.168.1.25',
+    'net.host.port': 57634
+  },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-net',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: '4711ef4bc16974c40e7f13107406a176',
+  parentSpanContext: {
+    traceId: '4711ef4bc16974c40e7f13107406a176',
+    spanId: '06a0d1d6e45cd5d5',
+    traceFlags: 1,
+    traceState: undefined
+  },
+  traceState: undefined,
+  name: 'tcp.connect',
+  id: '6f5de02a0c4d042e',
+  kind: 0,
+  timestamp: 1753438967973000,
+  duration: 46468.2,
+  attributes: {
+    'net.transport': 'ip_tcp',
+    'net.peer.name': 'ac-wdgiqte-shard-00-02.sjry5f5.mongodb.net',
+    'net.peer.port': 27017,
+    'net.peer.ip': '159.41.196.0',
+    'net.host.ip': '192.168.1.25',
+    'net.host.port': 57635
+  },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-net',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: 'f05f4440d3ec584fcbdafbd0fd7d3fca',
+  parentSpanContext: undefined,
+  traceState: undefined,
+  name: 'tls.connect',
+  id: 'd4570fcf0473b2ad',
+  kind: 0,
+  timestamp: 1753438967964000,
+  duration: 119892.3,
+  attributes: {
+    'tls.protocol': 'TLSv1.3',
+    'tls.authorized': 'true',
+    'tls.cipher.name': 'TLS_AES_128_GCM_SHA256',
+    'tls.cipher.version': 'TLSv1.3',
+    'tls.certificate.fingerprint': '56:4F:59:61:46:69:9F:CC:BD:1D:4D:35:1E:C2:B3:08:A9:17:3C:AA',
+    'tls.certificate.serialNumber': '06C00C79FE8CAD518929A26040B23D5E1C3A',
+    'tls.certificate.validFrom': 'Jul 21 05:31:33 2025 GMT',
+    'tls.certificate.validTo': 'Oct 19 05:31:32 2025 GMT',
+    'tls.alpnProtocol': ''
+  },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-net',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: '4711ef4bc16974c40e7f13107406a176',
+  parentSpanContext: undefined,
+  traceState: undefined,
+  name: 'tls.connect',
+  id: '06a0d1d6e45cd5d5',
+  kind: 0,
+  timestamp: 1753438967973000,
+  duration: 127268.9,
+  attributes: {
+    'tls.protocol': 'TLSv1.3',
+    'tls.authorized': 'true',
+    'tls.cipher.name': 'TLS_AES_128_GCM_SHA256',
+    'tls.cipher.version': 'TLSv1.3',
+    'tls.certificate.fingerprint': '56:4F:59:61:46:69:9F:CC:BD:1D:4D:35:1E:C2:B3:08:A9:17:3C:AA',
+    'tls.certificate.serialNumber': '06C00C79FE8CAD518929A26040B23D5E1C3A',
+    'tls.certificate.validFrom': 'Jul 21 05:31:33 2025 GMT',
+    'tls.certificate.validTo': 'Oct 19 05:31:32 2025 GMT',
+    'tls.alpnProtocol': ''
+  },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-dns',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: '0a4f79dbebcc8227497af951ecd4c09c',
+  parentSpanContext: undefined,
+  traceState: undefined,
+  name: 'dns.lookup',
+  id: 'e97e5c3df2078fe9',
+  kind: 2,
+  timestamp: 1753438968123000,
+  duration: 9764.3,
+  attributes: { 'peer.ipv4': '159.41.251.235' },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-net',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: '70b276481976dbb61ff994ec0f66d013',
+  parentSpanContext: {
+    traceId: '70b276481976dbb61ff994ec0f66d013',
+    spanId: 'e67ec0e0b2e9e933',
+    traceFlags: 1,
+    traceState: undefined
+  },
+  traceState: undefined,
+  name: 'tcp.connect',
+  id: 'cd78abbb3aaed1f1',
+  kind: 0,
+  timestamp: 1753438968123000,
+  duration: 48742.1,
+  attributes: {
+    'net.transport': 'ip_tcp',
+    'net.peer.name': 'ac-wdgiqte-shard-00-00.sjry5f5.mongodb.net',
+    'net.peer.port': 27017,
+    'net.peer.ip': '159.41.251.235',
+    'net.host.ip': '192.168.1.25',
+    'net.host.port': 57636
+  },
+  status: { code: 0 },
+  events: [],
+  links: []
+}
+{
+  resource: {
+    attributes: {
+      'host.name': 'DROID',
+      'host.arch': 'amd64',
+      'host.id': '2059fc71-8c93-420b-b542-8b45b928aa4b',
+      'process.pid': 4988,
+      'process.executable.name': 'C:\\WINDOWS\\system32\\cmd.exe ',
+      'process.executable.path': 'C:\\TOOLS\\nodejs\\node.exe',
+      'process.command_args': [ 'C:\\TOOLS\\nodejs\\node.exe', 'C:\\DEV\\oriv\\app.js' ],
+      'process.runtime.version': '22.17.0',
+      'process.runtime.name': 'nodejs',
+      'process.runtime.description': 'Node.js',
+      'process.command': 'C:\\DEV\\oriv\\app.js',
+      'process.owner': 'satvi',
+      undefined: 'DROID',
+      'custom.attribute.team': 'platform',
+      'service.name': 'unknown_service:C:\\TOOLS\\nodejs\\node.exe',
+      'telemetry.sdk.language': 'nodejs',
+      'telemetry.sdk.name': 'opentelemetry',
+      'telemetry.sdk.version': '2.0.1'
+    }
+  },
+  instrumentationScope: {
+    name: '@opentelemetry/instrumentation-net',
+    version: '0.47.0',
+    schemaUrl: undefined
+  },
+  traceId: '70b276481976dbb61ff994ec0f66d013',
+  parentSpanContext: undefined,
+  traceState: undefined,
+  name: 'tls.connect',
+  id: 'e67ec0e0b2e9e933',
+  kind: 0,
+  timestamp: 1753438968123000,
+  duration: 124209.3,
+  attributes: {
+    'tls.protocol': 'TLSv1.3',
+    'tls.authorized': 'true',
+    'tls.cipher.name': 'TLS_AES_128_GCM_SHA256',
+    'tls.cipher.version': 'TLSv1.3',
+    'tls.certificate.fingerprint': '56:4F:59:61:46:69:9F:CC:BD:1D:4D:35:1E:C2:B3:08:A9:17:3C:AA',
+    'tls.certificate.serialNumber': '06C00C79FE8CAD518929A26040B23D5E1C3A',
+    'tls.certificate.validFrom': 'Jul 21 05:31:33 2025 GMT',
+    'tls.certificate.validTo': 'Oct 19 05:31:32 2025 GMT',
+    'tls.alpnProtocol': ''
+  },
+  status: { code: 0 },
+  events: [],
+  links: []
+}

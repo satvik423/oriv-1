@@ -13,6 +13,7 @@ const User = require("./models/users");
 const connectDB = require("./config/db");
 const roles = require("./middlewares/roles");
 const authRoutes = require("./routes/auth.route");
+const logger = require("./logger");
 app.use(express.json());
 app.use("/uploads", express.static("uploads"));
 app.use(cors());
@@ -26,14 +27,16 @@ app.use(cors());
     await connectNats();
     app.post("/api/admin/signup", async (req, res) => {
       try {
-        console.log("Creating admin user...");
+        logger.info("Creating admin user...");
+        // console.log("Creating admin user...");
         const newAdmin = new User({
           username: req.body.username,
           password: req.body.password,
           role: "admin",
         });
         await newAdmin.save();
-        console.log("New admin created:", newAdmin);
+        logger.info("New admin created:", newAdmin);
+        // console.log("New admin created:", newAdmin);
         res.status(201).json({ message: "User created" });
       } catch (error) {
         res
@@ -51,7 +54,8 @@ app.use(cors());
 
     // app.listen
     app.listen(PORT, () => {
-      console.log(`Server is running on port http://localhost:${PORT}`);
+      logger.info(`Server is running on port http://localhost:${PORT}`);
+      // console.log(`Server is running on port http://localhost:${PORT}`);
     });
   } catch (error) {
     console.error("Error during initialization:", error);
